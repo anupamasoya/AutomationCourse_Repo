@@ -13,8 +13,8 @@ public class Base {
 		}
 	
 	public void browserCloseAndQuit() {
-		//driver.close();
-		driver.quit();
+		//driver.close(); //closes only current tab
+		driver.quit(); //close the entire browser and the session
 	}
 	
 	public static void main(String[] args) {
