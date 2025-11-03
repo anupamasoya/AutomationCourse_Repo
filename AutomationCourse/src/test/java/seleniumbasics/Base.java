@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Base {
-	public WebDriver driver; //public (can access from everywhere) ,WebDriver is an  interface ,driver is a variable
+	public WebDriver driver; //public (can access from everywhere) ,WebDriver is an interface ,driver is a variable
 	
 	public void initializeBrowser() {
 		driver = new ChromeDriver();
