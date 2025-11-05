@@ -31,9 +31,6 @@ public class BrowserandNavigationCommands extends Base{
 			cmds.initializeBrowser();
 			cmds.browserCommands();
 			cmds.navigationCommands();
-			
-				
-
-	}
+			}
 
 }
