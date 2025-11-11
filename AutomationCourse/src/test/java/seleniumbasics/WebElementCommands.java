@@ -1,0 +1,31 @@
+package seleniumbasics;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class WebElementCommands extends Base {
+	public void verifyElementCommands() {
+		driver.navigate().to("https://selenium.qabible.in/simple-form-demo.php");
+		WebElement messageTextBox=driver.findElement(By.id("single-input-field"));
+		messageTextBox.sendKeys("ANU");
+		
+		WebElement showMessagebutton=driver.findElement(By.id("button-one"));
+		showMessagebutton.click();
+		
+		WebElement text=driver.findElement(By.id("message-one"));
+		System.out.println(text.getText());
+		System.out.println(text.getTagName());
+		messageTextBox.clear();
+		//System.out.println(showMessagebutton.getCssValue("background-colour"));
+			System.out.println(showMessagebutton.getCssValue("background-color"));
+		
+		}
+public static void main(String[] args) {
+ 
+		WebElementCommands web = new WebElementCommands();
+		web.initializeBrowser();
+		web.verifyElementCommands();
+
+	}
+
+}
