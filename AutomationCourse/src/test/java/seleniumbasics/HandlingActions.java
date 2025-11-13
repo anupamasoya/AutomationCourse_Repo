@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 public class HandlingActions extends Base {
-	public void verifyrightclick() {
+	public void verifyRightClick() {
 		WebElement others = driver.findElement(By.id("others"));
 		Actions action = new Actions(driver);
 		action.contextClick(others).build().perform();
