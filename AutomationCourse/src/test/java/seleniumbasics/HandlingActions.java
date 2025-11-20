@@ -46,7 +46,7 @@ public class HandlingActions extends Base {
 		ha.initializeBrowser();
 		// ha.verifyrightclick();
 		// ha.verifyMouseHover();
-		// ha.verifyDragandDrop();
+		 ha.verifyDragandDrop();
 		try {
 			ha.verifyKeyboardAction();
 		} catch (AWTException e) {
