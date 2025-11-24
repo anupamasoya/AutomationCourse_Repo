@@ -5,7 +5,10 @@
     <classes>
       <class name="testscripts.LoginTest">
         <methods>
-          <include name="verifyWhetherUserIaAbelToLoginWithValidCredentials"/>
+          <include name="verifyWhetherUserIsAbleToLoginWithValidCredential"/>
+          <include name="verifyWhetherUserIsAbleToLoginWithInValidUserNameandInValidPassword"/>
+          <include name="verifyWhetherUserIsAbleToLoginWithValidUserNameandInvalidPassword"/>
+          <include name="verifyWhetherUserIsAbleToLoginWithInValidUserNameandValidPassword"/>
           <include name="browserCloseAndQuit"/>
           <include name="initializeBrowser"/>
         </methods>
